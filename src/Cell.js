@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 
 export class Cell extends Component {
-  constructor(props) {
-    super();
-    this.state = {
-      color: props.value
+    state = {
+      color: this.props.value
     };
-  }
 
   handleClick = () => {
     this.setState({
